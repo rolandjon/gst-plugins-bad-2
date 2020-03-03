@@ -106,7 +106,8 @@ struct _GstAmcVideoDecClass
 {
   GstVideoDecoderClass parent_class;
 
-  const GstAmcCodecInfo *codec_info;
+  const GstAmcRegisteredCodec *registered_codec;
+
   gboolean direct_rendering;
 };
 
